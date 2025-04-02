@@ -1,12 +1,17 @@
 import { BrowserRouter, Routes, Route, NavLink, Navigate, Link} from 'react-router';
 import './Home.css';
 
+import logo from './assets/src/imgs/stolen_banner.avif';
+import youtube from './assets/src/imgs/youtube-logo.png';
+import instagram from './assets/src/imgs/instagram-logo.webp';
+import twitch from './assets/src/imgs/twitch-logo.png';
+
 export default function Home() {
 
     return (
         <div className='homePage'>
             <div className='logo'>
-             <img src='../stolen_banner.avif'/>
+             <img src={logo}/>
             </div>
             <Latest/>
 
@@ -87,17 +92,17 @@ function Socials() {
             <div className='links pop-in'>
                 <a href='https://www.instagram.com/oshiemoon/' className=''>
                     <h3>Instagram</h3>
-                    <img src='./instagram-logo.webp' className=''/>
+                    <img src={instagram} className=''/>
                     <p>@oshiemoon</p>
                 </a>
                 <a href='https://www.twitch.tv/oshiemoon' className=''>
                     <h3>Twitch</h3> 
-                    <img src='./twitch-logo.png' className=''/>
+                    <img src={twitch} className=''/>
                     <p>@oshiemoon</p>
                 </a>
                 <a href='' className=''>
                     <h3>Youtube</h3>
-                    <img src='./youtube-logo.png' className=''/>
+                    <img src={youtube} className=''/>
                     <p>@oshiemoon</p>
                 </a>
             </div>
