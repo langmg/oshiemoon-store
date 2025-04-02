@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route, NavLink, Navigate, Link} from 'react-router';
 import './Home.css';
 
-import logo from './assets/src/imgs/stolen_banner.avif';
-import youtube from './assets/src/imgs/youtube-logo.png';
-import instagram from './assets/src/imgs/instagram-logo.webp';
-import twitch from './assets/src/imgs/twitch-logo.png';
+import logo from '/src/assets/imgs/stolen_banner.avif';
+import youtube from '/src/assets/imgs/youtube-logo.png';
+import instagram from '/src/assets/imgs/instagram-logo.webp';
+import twitch from '/src/assets/imgs/twitch-logo.png';
 
 export default function Home() {
 
