@@ -1,0 +1,129 @@
+
+:root {
+    --oshiePink: rgb(243, 115, 109);
+    --oshieGrey: rgb(71, 71, 71);
+    --oshieDarkPink: rgb(190, 71, 71);
+    --oshieYellow: rgb(233, 193, 138);
+    --oshieBlue: #029098;
+
+    font-family: 'modak', sans-serif;
+}   
+
+
+#root {
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--oshieYellow);
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+
+.pop-in {
+    animation: pop-in ease-in-out both;
+        animation-timeline: view();
+        animation-range-start: 15%;
+        animation-range-end: 45%;
+}
+
+@keyframes pop-in {
+    0% {
+        scale: .8;
+        opacity: 0.1;
+    }
+    50% {
+        scale: 1.2;
+    }
+    100% {
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+
+.shopItem {
+    width: 250px;
+    height: 400px;
+    padding: 15px 15px 15px 15px;
+    
+    position: relative;
+    margin: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+
+
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    background-color: var(--oshiePink);
+    border: 4px var(--oshieDarkPink) dashed;
+    color: var(--oshieYellow);
+
+    .wish {
+        width: fit-content;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    
+        padding: 10px;
+        background: none;
+        border: none;
+        color: var(--oshieYellow);
+        -webkit-text-stroke: 0;
+        font-variation-settings: 
+            'opsz' 48,
+            'wght' 700;
+    
+        transition: color 800ms;
+    
+        &:hover, &:active {
+            color: var(--oshieBlue);
+        } 
+        
+        &:active {
+            animation: heart 500ms ease-in-out both;
+        }
+    }
+
+    img {
+        align-self: center;
+        width: 175px;
+        height: 300px;
+    }
+
+    .cart {
+        width: fit-content;
+        align-self: center;
+        background: none;
+        border: 2px transparent ridge;
+        padding: 10px;
+        border-radius: 1rem;
+
+        font-family: inherit;
+        font-size: 20px;
+        color:inherit;
+
+        &:hover, &:active {
+            color: var(--oshieBlue);
+        }
+
+    }
+    
+}
+
+@keyframes heart {
+    0% {
+        font-variation-settings: 
+            'FILL' 0;
+    }   
+
+    100% {
+        font-variation-settings: 
+            'FILL' 1;
+    }
+}

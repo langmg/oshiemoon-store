@@ -1,0 +1,23 @@
+
+
+
+
+.mainFooter {
+    padding: 10px;
+    background-color: var(--oshieDarkPink);
+
+    p, a {
+        font-size: 20px;
+        color: var(--oshiePink);
+        -webkit-text-stroke: 1px var(--oshieDarkPink);
+        display: flex;
+        font-variation-settings: 
+            'opsz' 25,
+            'wght' 700;
+
+        span {
+            padding-right: .5em;
+        }
+    }
+    
+}

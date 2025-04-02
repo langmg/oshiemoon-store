@@ -1,0 +1,90 @@
+
+
+
+
+.PageHeader {
+    --bubble: rgb(224, 115, 109);
+
+    display: flex;
+    height: 70px;
+    padding: 20px;
+    position:fixed;
+    inset: 0 0 0 0;
+    z-index: 1;
+
+    background-color: var(--oshiePink);
+    background-image: 
+        radial-gradient(var(--bubble) 70px, transparent 75px),
+        radial-gradient(var(--bubble) 70px, transparent 75px),
+        radial-gradient(var(--bubble) 60px, transparent 65px),
+        radial-gradient(var(--bubble) 20px, transparent 25px),
+        radial-gradient(var(--bubble) 50px, transparent 55px);
+    background-position: -50px -75px, 100% 40px, 50% 10px, 22% 23px, 75% -50px;
+    background-size: 140px 140px;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+
+    color: var(--oshieYellow);
+    -webkit-text-stroke: 1px var(--oshieGrey);
+
+    a {
+        display: flex;
+        align-items: center;
+        font-family: inherit;
+
+        &.support {
+            padding: 10px;
+            font-size: 15px;
+            color: inherit;
+            -webkit-text-stroke: none;
+            font-variation-settings:
+            'opsz' 48,
+            'wght' 500;
+        } 
+    }
+    
+    a.support:hover, button:hover {
+            color: var(--oshieBlue);
+            font-variation-settings: 
+                'FILL' 1;
+                
+    }
+
+    button {
+        border: none;
+        background-color: transparent;
+        color: inherit;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        font-family: inherit;
+        -webkit-text-stroke: 0px;
+        font-size: 15px;
+
+        font-variation-settings:
+            'opsz' 48,
+            'wght' 700;
+    }
+
+    .title {
+        flex-grow: 1;
+        text-align: left;
+
+        font-size: 30px;
+        color: inherit;
+        position: relative;
+        text-shadow: -6px -4px 0px var(--oshieDarkPink);
+
+        h1::after {
+            font-size: 1em;
+            position: absolute;
+            top: -11px;
+            left: -2px;
+            content: attr(title);
+            color: transparent;
+            text-shadow: none;
+            -webkit-text-stroke: 1px var(--oshieGrey);
+        }
+    }
+}
