@@ -18,11 +18,12 @@ function App() {
       <Header/>
         <main>
           <Routes>
-            <Route index element={<Home/>}/>
+            <Route path='oshiemoon-store' element={<Home/>}/>
             <Route path='shop' element={<Shop/>}/>
             <Route path='cart' element={<Cart/>}/>
             <Route path='settings' element={<Settings/>}/>
             <Route path='support' element={<Support/>}/>
+            <Route path='*' element={<Navigate to='/oshiemoon-store'/>}/>
           </Routes>
         </main>
       <Footer/>
