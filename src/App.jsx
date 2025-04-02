@@ -18,7 +18,7 @@ function App() {
       <Header/>
         <main>
           <Routes>
-            <Route path='oshiemoon-store' element={<Home/>}/>
+            <Route path='oshiemoon-store/' element={<Home/>}/>
             <Route path='shop' element={<Shop/>}/>
             <Route path='cart' element={<Cart/>}/>
             <Route path='settings' element={<Settings/>}/>
