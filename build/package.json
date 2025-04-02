@@ -1,6 +1,6 @@
 {
-  "name": "oshimoon",
   "homepage": "http://langmg.github.io/oshimoon.store",
+  "name": "oshimoon",
   "private": true,
   "version": "0.0.0",
   "type": "module",
