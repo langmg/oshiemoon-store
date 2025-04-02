@@ -1,7 +1,6 @@
 {
-  "homepage": "http://langmg.github.io/oshiemoon.store",
+  "homepage": "http://langmg.github.io/oshiemoon-store",
   "name": "oshiemoon",
-  "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
